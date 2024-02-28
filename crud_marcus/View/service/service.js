@@ -40,16 +40,15 @@ const creatUser = async (newusers) => {
 
 const UpdateUser = async (index, users) => {
 
+    ///** Method put trocado por post. o php slim não possue o method de put compativel com o multipart/form-data  *///
+    ///** Então para suprir as necessidades do projeto, fiz essa alteracao enquanto crio o method put com multipart/form-data compativel *///
+
     const option = {
-        method: 'PUT',
-        body: JSON.stringify(users),
-        headers: {
-            'content-type': 'application/json'
-        }
-    }
+        method: 'POST',
+        body: users,
+    };
 
     const response = await fetch(`${baseUrl}/${index}`, option);
-
     const res = await response.json();
 
     return res;

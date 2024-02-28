@@ -20,7 +20,7 @@ $app->group('/crudphp', function () use ($app) {
     $app->post('/users', usersController::class . ':postUser')
         ->add(new errorInsert());
 
-    $app->put('/users/{id}', usersController::class . ':updateUser')
+    $app->post('/users/{id}', usersController::class . ':updateUser')
         ->add(new errorUpdate());
 
     $app->delete('/users/{id}', usersController::class . ':deleteUser');

@@ -11,11 +11,13 @@ final class errorUpdate
 
     public function __invoke(Request $request, Response $response, callable $next): Response
     {
+        ///** Method put trocado por post. o php slim não possue o method de put compativel com o multipart/form-data  *///
+        ///** Então para suprir as necessidades do projeto, fiz essa alteracao enquanto crio o method put com multipart/form-data compativel *///
+
+        /** Method de reconhecimento do put com multipart/form-data em desenvolvimento... */
 
         $newuser = $request->getParsedBody();
-
-        var_dump($request);
-
+        var_dump($newuser);
 
 
         if (

@@ -107,14 +107,6 @@ final class usersController
         $email = $request->getParsedBody()['Email'];
         $dt_birth = $request->getParsedBody()['DtNascimento'];
         $phone = $request->getParsedBody()['CelularContato'];
-
-        var_dump(
-            $nome,
-            $email,
-            $dt_birth,
-            $phone
-        );
-
         $img = $_FILES['Image'];
         $uploadimg = new UploadImage();
         $resimg = $uploadimg->uploadImages($img);
