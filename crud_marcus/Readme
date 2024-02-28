@@ -1,0 +1,27 @@
+CRUD de Usuarios
+Pré-requisitos
+PHP >= 7.5
+MySQL
+
+Instalação e Configuração
+Instalar Dependências:
+Execute o seguinte comando para instalar as dependências necessárias: composer install
+
+Banco de Dados:
+A estrutura do banco de dados está disponível no arquivo structure.sql. Certifique-se de importar essa estrutura antes de iniciar o aplicativo.
+
+Configuração do Ambiente:
+Crie um arquivo chamado env.php na raiz do projeto.
+Para ajudá-lo a configurar seu arquivo env.php, você pode consultar o exemplo fornecido em env Example.php.
+
+Iniciando a Aplicação:
+Após concluir a instalação e configuração conforme descrito acima, siga os passos abaixo para iniciar a aplicação:
+
+Iniciar o Servidor Local: Para iniciar a aplicação, utilize o seguinte comando:
+php -S localhost:8080 ou composer start o link
+
+Nota: Você pode alterar a porta 8080 para qualquer outra porta disponível de sua preferência. Por exemplo, para usar a porta 3000 ou 4000, você executaria: php -S 0.0.0.0:3000 ou 4000.
+
+Abra um navegador da web e visite o seguinte URL para acessar a view de contatos:
+
+http://localhost:8080/view/index.php
