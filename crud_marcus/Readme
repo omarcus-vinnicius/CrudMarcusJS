@@ -23,5 +23,3 @@ php -S localhost:8080 ou composer start o link
 Nota: Você pode alterar a porta 8080 para qualquer outra porta disponível de sua preferência. Por exemplo, para usar a porta 3000 ou 4000, você executaria: php -S 0.0.0.0:3000 ou 4000.
 
 Abra um navegador da web e visite o seguinte URL para acessar a view de contatos:
-
-http://localhost:8080/view/index.php
