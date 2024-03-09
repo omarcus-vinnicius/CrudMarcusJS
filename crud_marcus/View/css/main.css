@@ -234,6 +234,7 @@ table{
     background-color: var(--white);
     border: solid 10px var(--bluec1);
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 thead tr td{
@@ -306,4 +307,20 @@ td .action{
     height: 30px;
     display: flex;
     
+}
+
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+footer span {
+font: 1em sans-serif;
+color: var(--white);
 }
